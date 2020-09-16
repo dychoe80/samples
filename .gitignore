@@ -1,0 +1,11 @@
+**\.vs
+*.user
+*.pdb
+*.obj
+*.idb
+*.tlog
+*.ilk
+*.log
+*.iobj
+*.ipdb
+*.exe
