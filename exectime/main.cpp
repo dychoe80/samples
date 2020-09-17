@@ -1,6 +1,9 @@
 // This file is subject to the terms and conditions defined in
 // file 'LICENSE', which is part of this source code package.
 
+// Test various methods to measure execution time.
+// Here, we measure elapsed times of matrix multiplication (dot product)
+
 #include "time_example.h"
 #include "matrix.h"
 
@@ -18,13 +21,14 @@ int main(int argc, char* argv[])
 {
     if (argc < 4)
     {
-        std::cerr << "Usage: " << argv[0] << "<time method index>" << std::endl;
+        std::cerr << "Usage: " << argv[0] << " <time method index> <number of rows> <number of columns>" << std::endl;
         return EXIT_FAILURE;
     }
     int const timeMethod = std::atoi(argv[1]);
     int const M = std::atoi(argv[2]);
     int const N = std::atoi(argv[3]);
 
+    // (MxN) * (NxM) = (MxM)
     Dim const aDim{ M, N }, bDim{ N, M }, cDim{ M, M };
     std::vector<float> A(M * N), B(N * M), C(M * M);
 
