@@ -1,0 +1,10 @@
+BoldAsFont=no
+Locale=
+Charset=
+FontHeight=10
+FontSmoothing=default
+Font=Fixedsys
+Transparency=high
+OpaqueWhenFocused=no
+CursorType=line
+BoldAsColour=yes
