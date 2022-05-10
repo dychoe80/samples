@@ -16,7 +16,7 @@ struct scope_exit
 
     ~scope_exit()
     {
-        if (m_run)
+        if (run_)
             func_();
     }
 
